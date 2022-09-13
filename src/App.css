@@ -1,38 +1,68 @@
-.App {
+body{
+  background-color: #282c34;
+  color:white;
+}
+.title {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table li{
+  display:flex;
+  justify-content: space-between;
+  padding:10px;
+  border: 5px solid rgb(238, 41, 41);
+  border-bottom: none;
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 700;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table li:last-child{
+ border: 5px solid rgb(238, 41, 41); 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.editBtn{
+  display:inline-block;
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color:white;
+  color:rgb(23, 4, 167);
+  cursor: pointer;
+}
+.editBtn:hover{
+  background-color: rgb(23, 4, 167);
+  color:white;
+}
+.addTodo{
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.inputField{
+  margin:10px;
+  height:30px;
+  font-size: 20px;
+}
+button{
+  height:35px;
+  cursor: pointer;
+}
+.deleteBtn{
+  margin:10px;
+  height:30px;
+  width:30px;
 }
 
-.App-link {
-  color: #61dafb;
+.deleteBtn{
+  display:inline-block;
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color:white;
+  color:rgb(238, 41, 41);
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteBtn:hover{
+  background-color: rgb(238, 41, 41);
+  color:white;
 }
